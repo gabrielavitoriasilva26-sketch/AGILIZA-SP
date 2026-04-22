@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --cor-primaria:#005DCE;
+    --cor-secundaria:#FFFFFF;
+    --cor-terciaria:#457FB3;
+    --cor-texto:#000;
+    --cor-botao:#EFEFEF;
+    --cor-agendar:#32DC57;
+    --cor-cancelar:#FF0000;
+    --fonte-primaria:'Heebo',sans-serif;
+    --fonte-secundaria:'Open Sans',sans-serif; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.topo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Titulo__principal{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+.subtitulo{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.login{
+    background-color: #EDEDED;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.login__texto{
+    margin-bottom: 20px;
+}
+
+.login label{
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+}
+
+.login input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.login button{
+    width: 60%;
+    padding: 10px;
+    background-color: #005DCE;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.login a{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: blue;
+}
+
+footer{
+    color: var(--cor-secundaria);
+    text-align: center;
+    margin-top: 20px;
+}

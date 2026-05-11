@@ -1,101 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
 
 :root{
     --cor-primaria:#005DCE;
     --cor-secundaria:#FFFFFF;
-    --cor-terciaria:#457FB3;
-    --cor-texto:#000;
-    --cor-botao:#EFEFEF;
-    --cor-agendar:#32DC57;
-    --cor-cancelar:#FF0000;
+    --cor-card:#EDEDED;
+    --cor-input:#D9D9D9;
     --fonte-primaria:'Heebo',sans-serif;
-    --fonte-secundaria:'Open Sans',sans-serif; 
+    --fonte-secundaria:'Open Sans',sans-serif;
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-    background-color: var(--cor-primaria);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
+    background:var(--cor-primaria);
+    font-family:var(--fonte-primaria);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
 .topo{
-    text-align: center;
-    margin-bottom: 20px;
+    text-align:center;
+    margin-bottom:20px;
 }
 
-.Titulo__principal{
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-primaria);
-    font-size: 36px;
-    letter-spacing: 5px;
+.logo{
+    width:85px;
+    margin-bottom:12px;
+}
+
+.titulo{
+    color:var(--cor-secundaria);
+    font-size:36px;
+    font-weight:300;
+    letter-spacing:3px;
 }
 
 .subtitulo{
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);
-    font-size: 14px;
-    margin-bottom: 20px;
+    color:var(--cor-secundaria);
+    font-size:12px;
+    font-family:var(--fonte-secundaria);
 }
 
 .login{
-    background-color: #EDEDED;
-    width: 350px;
-    padding: 30px;
-    border-radius: 10px;
+    background:var(--cor-card);
+    width:310px;
+    padding:30px;
+    border-radius:8px;
 }
 
-.login__texto{
-    margin-bottom: 20px;
+.login__titulo{
+    font-size:18px;
+    font-weight:400;
+    margin-bottom:25px;
 }
 
-.login label{
-    font-size: 12px;
-    display: block;
-    margin-top: 10px;
+.login__label{
+    display:block;
+    font-size:11px;
+    margin-bottom:5px;
+    margin-top:12px;
 }
 
-.login input{
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ddd;
+.login__input{
+    width:100%;
+    padding:9px;
+    border:none;
+    border-radius:3px;
+    background:var(--cor-input);
+    font-size:11px;
+    box-shadow:0 2px 3px rgba(0,0,0,0.2);
 }
 
-.login button{
-    width: 60%;
-    padding: 10px;
-    background-color: #005DCE;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    display: block;
-    margin: 15px auto;
-    cursor: pointer;
+.login__botao{
+    width:55%;
+    padding:8px;
+    margin:25px auto 10px auto;
+    display:block;
+    border:none;
+    border-radius:6px;
+    background:var(--cor-primaria);
+    color:white;
+    font-size:12px;
+    font-weight:600;
+    cursor:pointer;
 }
 
-.login a{
-    display: block;
-    text-align: center;
-    font-size: 12px;
-    color: blue;
+.login__link{
+    display:block;
+    text-align:center;
+    color:#005DCE;
+    font-size:10px;
+    font-family:var(--fonte-secundaria);
 }
 
 footer{
-    color: var(--cor-secundaria);
+    margin-top:20px;
+    color:white;
+    font-size:12px;
     text-align: center;
-    margin-top: 20px;
+}
+
+.icone-img{
+    width:50px;
+    height:50px;
+    display:block;
+    margin:10px auto;
+}
+
+.menu-img{
+    width:25px;
+    display:block;
+    margin:auto;
+}
+
+.imagem{
+    display:block;
+    margin:20px auto;
+    width:120px;
+}
+
+.senha{
+    color:var(--cor-secundaria);
+    margin:20px;
+    text-align:center;
 }

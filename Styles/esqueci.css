@@ -25,28 +25,16 @@ body{
     align-items:center;
     min-height:100vh;
 }
+.imagem{
+    display:block;
+    margin:20px auto;
+    width:120px;
+}
 
-.topo{
+.senha{
+    color:var(--cor-secundaria);
+    margin:20px;
     text-align:center;
-    margin-bottom:20px;
-}
-
-.logo{
-    width:85px;
-    margin-bottom:12px;
-}
-
-.titulo{
-    color:var(--cor-secundaria);
-    font-size:36px;
-    font-weight:300;
-    letter-spacing:3px;
-}
-
-.subtitulo{
-    color:var(--cor-secundaria);
-    font-size:12px;
-    font-family:var(--fonte-secundaria);
 }
 
 .login{
@@ -107,4 +95,3 @@ footer{
     font-size:12px;
     text-align: center;
 }
-

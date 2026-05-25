@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+:root{
+    --cor-primaria:#005DCE;
+    --cor-secundaria:#FFFFFF;
+    --cor-card:#EDEDED;
+    --cor-input:#D9D9D9;
+    --fonte-primaria:'Heebo',sans-serif;
+    --fonte-secundaria:'Open Sans',sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #005DCE;
+
+}
+
+
+.Imagem__computador{
+    position: absolute;
+    top:50px;
+    left: 600px;
+}
+
+.data{
+    margin-bottom: 600px;
+    margin-left: 850px;
+    color: #FFFFFF;
+    font-family: var(--fonte-primaria);
+    font-size: 15px;
+    margin-top: 80px;
+}
+h1{
+   text-align: center;
+   margin-top: -600px;
+   color: #FFFFFF;
+
+
+}

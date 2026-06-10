@@ -3,22 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/home.css">
+    <link rel="stylesheet" href="/Styles/home.css">
     <title>Home</title>
 </head>
-<body class="Topo">
-    <header>
-        <div>
-        
-    <img class="Imagem__computador" src="./Imagens/compuatador.png" alt="">
-</div>
-<div>
-        <p class="data" id="data-atual"></p>
-        <h1>Seja Bem-Vindo(a)!</h1>
-</div>
-<script src="script.js"></script>
 
+<body>
+
+    <header class="topo">
+        <div class="conteudo">
+            <div class="logo">
+                <img src="./Imagens/compuatador.png" alt="computador">
+            </div>
+
+            <p class="data" id="data-atual"></p>
+
+            <h1>Seja Bem-Vindo(a)!</h1>
+
+            <div class="reserva">
+                <p>Minhas Reservas</p>
+                <span>0</span>
+            </div>
+        </div>
     </header>
-    
+
+    <main class="principal">
+
+        <div class="botoes">
+
+            <a href="#" class="botao">
+                <div class="circulo">+</div>
+                <p>Agendar Carrinhos</p>
+            </a>
+
+            <a href="./Meus.html" class="botao_link">
+                <div class="icone_verde">
+                    <img class="agenda_icon" src="./Imagens/agenda.png" alt="agenda">
+                    <img class="check_icon" src="./Imagens/Icon.png" alt="icon">
+                </div>
+
+                <p>Meus Agendamentos</p>
+            </a>
+
+        </div>
+
+        <div class="proximos">
+            <h2>Próximos</h2>
+
+            <div class="lista">
+                <div class="imagem_computador">
+                    <img src="./Imagens/compuatador.png" alt="logo">
+                </div>
+
+                <div class="texto_lista">
+                    <h3>Carrinho 1</h3>
+                    <p>10/03 às 07:30</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+
+        <a href="./Home.html" class="item_rodape">
+            <img src="./Imagens/Home.png" alt="home">
+            <p>Home</p>
+        </a>
+
+        <a href="#" class="item_rodape">
+            <img src="./Imagens/agenda.png" alt="agenda">
+            <p>Agenda</p>
+        </a>
+
+        <a href="./Meus.html" class="item_rodape">
+            <img class="img_fundo" src="./Imagens/agenda.png" alt="Meus">
+            <img class="img_sobreposicao" src="./Imagens/Check.png" alt="check">
+            <p>Meus</p>
+        </a>
+
+        <a href="#" class="item_rodape">
+            <img src="./Imagens/User.png" alt="Eu">
+            <p>Eu</p>
+        </a>
+
+    </footer>
+
+    <script src="./script.js"></script>
+
 </body>
 </html>

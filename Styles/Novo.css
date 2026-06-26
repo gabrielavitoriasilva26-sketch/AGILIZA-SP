@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+:root {
+    --cor-primaria: #2D6CDF;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #4BEF66;
+    --cor-texto: #000000;
+    --cor-card: #E6E1E1;
+    --cor-input: #F3F3F3;
+    --cor--cinza: #808080;
+    --cor--body: #F3F3F3;
+    --cor-preto-fundo: #1A1A1A;
+    --cor-vermelho: #FF1717;
+    --cor-cinza-texto: #9E9494;
+    --cor-azul-escuro: #0073D9;
+    --cor-verde: #44D755;
+    --fonte-primaria: 'Heebo', sans-serif;
+    --fonte-secundaria: 'Open Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--cor--body);
+    font-family: var(--fonte-primaria);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 90px;
+}
+.topo {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 20px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+.voltar {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--fonte-secundaria);
+}
+.titulo {
+    margin-top: 25px;
+    text-align: center;
+}
+.titulo h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+.titulo p {
+    font-size: 14px;
+    font-family: var(--fonte-secundaria);
+    opacity: 0.9;
+}
+.conteudo {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+section {
+    margin-bottom: 24px;
+}
+section h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-texto);
+    margin-bottom: 12px;
+}
+.calendario {
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.mes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+.dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.dias-semana p {
+    font-size: 12px;
+    color: var(--cor--cinza);
+    font-family: var(--fonte-secundaria);
+}
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+}
+.dias span {
+    width: 34px;
+    height: 34px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: var(--cor-texto);
+    font-family: var(--fonte-secundaria);
+}
+.dias span:hover {
+    background-color: var(--cor-card);
+    cursor: pointer;
+}
+.dia-ativo {
+    background-color: var(--cor-primaria) !important;
+    color: var(--cor-secundaria) !important;
+}
+.botoes-carrinho {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+.botoes-carrinho button {
+    min-width: 95px;
+    border: none;
+    background-color: var(--cor-card);
+    color: var(--cor-texto);
+    padding: 10px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+}
+.botoes-carrinho button:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.select-turma {
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    padding: 14px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.icone-local {
+    font-size: 18px;
+}
+.select-turma select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+    color: var(--cor-texto);
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+}
+.lista-horarios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.lista-horarios button {
+    border: none;
+    padding: 12px 5px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10);
+}
+.disponivel {
+    background-color: var(--cor-verde);
+    color: var(--cor-secundaria);
+}
+.indisponivel {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-secundaria);
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+.disponivel:hover {
+    background-color: var(--cor-terciaria);
+}
+.legenda {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.item-legenda {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.item-legenda p {
+    font-size: 13px;
+    color: var(--cor--cinza);
+    font-family: var(--fonte-secundaria);
+}
+.bolinha {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.verde {
+    background-color: var(--cor-verde);
+}
+.vermelha {
+    background-color: var(--cor-vermelho);
+}
+.acoes {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+.acoes button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+}
+.cancelar {
+    background-color: var(--cor-card);
+    color: var(--cor-texto);
+}
+.confirmar {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cancelar:hover {
+    background-color: #d8d3d3;
+}
+.confirmar:hover {
+    background-color: var(--cor-azul-escuro);
+}
+.rodape {
+    width: 100%;
+    height: 75px;
+    background-color: var(--cor-secundaria);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #ddd;
+}
+.item_rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    color: var(--cor--cinza);
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.item_rodape img {
+    width: 26px;
+}
+.item_rodape p {
+    font-family: var(--fonte-secundaria);
+}
+.img_fundo {
+    width: 26px;
+}
+.img_sobreposicao {
+    width: 14px !important;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+@media (max-width: 480px) {
+    .titulo h1 {
+        font-size: 23px;
+    }
+    .conteudo {
+        padding: 22px 16px;
+    }
+    .lista-horarios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .dias span {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+    .acoes {
+        flex-direction: column;
+    }
+}

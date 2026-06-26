@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/Novo.css">
+    <title>Novo Agendamento</title>
+</head>
+<body>
+
+    <header class="topo">
+        <a href="./Home.html" class="voltar">← Voltar</a>
+
+        <div class="titulo">
+            <h1>Novo Agendamento</h1>
+            <p>Selecione data, horário e carrinho</p>
+        </div>
+    </header>
+
+    <main class="conteudo">
+
+        <section class="calendario-area">
+            <div class="calendario">
+
+                <div class="mes">
+                    <span id="nomeMes"></span>
+                    <span id="anoAtual"></span>
+                </div>
+
+                <div class="dias-semana">
+                    <p>Dom</p>
+                    <p>Seg</p>
+                    <p>Ter</p>
+                    <p>Qua</p>
+                    <p>Qui</p>
+                    <p>Sex</p>
+                    <p>Sáb</p>
+                </div>
+
+                <div class="dias" id="diasCalendario"></div>
+
+            </div>
+        </section>
+
+        <section class="filtro">
+            <h2>Filtrar por carrinhos:</h2>
+
+            <div class="botoes-carrinho">
+                <button type="button" class="botao-carrinho ativo">Todos</button>
+                <button type="button" class="botao-carrinho">Carrinho 1</button>
+                <button type="button" class="botao-carrinho">Carrinho 2</button>
+                <button type="button" class="botao-carrinho">Carrinho 3</button>
+                <button type="button" class="botao-carrinho">Carrinho 4</button>
+            </div>
+        </section>
+
+        <section class="turma">
+            <h2>Selecione a turma que será utilizada:</h2>
+
+            <div class="select-turma">
+                <img src="./Imagens/local.png" alt="selecionar">
+
+                <select name="turma" id="turma">
+                    <option value="">Selecione a turma</option>
+                    <option value="1A">1º A</option>
+                    <option value="1B">1º B</option>
+                    <option value="1C">1º C</option>
+                    <option value="2A">2º A</option>
+                    <option value="2B">2º B</option>
+                    <option value="2C">2º C</option>
+                    <option value="3A">3º A</option>
+                    <option value="3B">3º B</option>
+                    <option value="3C">3º C</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="horarios">
+            <h2>Selecione o horário:</h2>
+
+            <div class="lista-horarios">
+                <button type="button" class="disponivel">07:30</button>
+                <button type="button" class="disponivel">08:20</button>
+                <button type="button" class="disponivel">09:25</button>
+                <button type="button" class="disponivel">10:15</button>
+                <button type="button" class="disponivel">11:05</button>
+                <button type="button" class="disponivel">11:55</button>
+                <button type="button" class="indisponivel">13:45</button>
+                <button type="button" class="indisponivel">12:55</button>
+                <button type="button" class="disponivel">14:50</button>
+                <button type="button" class="disponivel">15:40</button>
+            </div>
+
+            <div class="legenda">
+                <div class="item-legenda">
+                    <span class="bolinha verde"></span>
+                    <p>Horário disponível</p>
+                </div>
+
+                <div class="item-legenda">
+                    <span class="bolinha vermelha"></span>
+                    <p>Horário indisponível</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="acoes">
+            <button type="button" class="cancelar">Cancelar</button>
+            <button type="button" class="confirmar">Confirmar</button>
+        </section>
+
+    </main>
+
+   <footer class="rodape">
+    <a href="./Home.html" class="item_rodape">
+        <img src="./Imagens/Home.png" alt="home">
+        <p>Home</p>
+    </a>
+
+    <a href="#" class="item_rodape">
+        <img src="./Imagens/agenda.png" alt="agenda">
+        <p>Agenda</p>
+    </a>
+
+    <a href="./Meus.html" class="item_rodape">
+        <img class="img_fundo" src="./Imagens/agenda.png" alt="Meus">
+        <img class="img_sobreposicao" src="./Imagens/Check.png" alt="check">
+        <p>Meus</p>
+    </a>
+
+    <a href="./Eu.html" class="item_rodape">
+        <img src="./Imagens/User.png" alt="Eu">
+        <p>Eu</p>
+    </a>
+</footer>
+
+    <script src="./JS/Novo.js"></script>
+</body>
+</html>
